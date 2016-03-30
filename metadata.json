@@ -1,0 +1,17 @@
+{
+  "name": "jcpunk-efi",
+  "version": "0.1.0",
+  "author": "jcpunk",
+  "summary": "Facter fact for if system is booted in EFI mode",
+  "license": "Apache 2.0",
+  "source": "https://github.com/jcpunk/puppet-efi",
+  "project_page": "https://github.com/jcpunk/puppet-efi",
+  "issues_url": "https://github.com/jcpunk/puppet-efi/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
+
