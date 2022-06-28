@@ -1,6 +1,6 @@
 {
   "name": "jcpunk-efi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "jcpunk",
   "summary": "Facter fact for if system is booted in EFI mode",
   "license": "Apache 2.0",
