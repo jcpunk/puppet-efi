@@ -1,6 +1,6 @@
 {
   "name": "jcpunk-efi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "jcpunk",
   "summary": "Facter fact for if system is booted in EFI mode",
   "license": "Apache 2.0",
@@ -11,6 +11,13 @@
 
   ],
   "operatingsystem_support": [
+    {
+      "operatingsystem": "AlmaLinux",
+      "operatingsystemrelease": [
+        "8",
+        "9"
+      ]
+    },
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [

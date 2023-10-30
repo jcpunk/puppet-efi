@@ -16,7 +16,7 @@ Facter.add("secure_boot_enabled") do
           # If we didn't get any data, unpacking will fail
           secure_boot_status = (1 == code.unpack('H*').first.to_i) if code
         end
-      rescue Errno::EPERM, Errno::EACCES
+      rescue Errno::EPERM, Errno::EACCES, Errno::EINVAL
         next
       end
 
@@ -34,7 +34,7 @@ Facter.add("secure_boot_enabled") do
             # If we didn't get any data, unpacking will fail
             setup_mode_status = (0 == code.unpack('H*').first.to_i) if code
           end
-        rescue Errno::EPERM, Errno::EACCES
+        rescue Errno::EPERM, Errno::EACCES, Errno::EINVAL
           next
         end
 
